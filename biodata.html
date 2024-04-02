@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Data Form</title>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" />
+            </p>
+            <p>
+                <label for="jenis kelamin">jenis kelamin:</label>
+                <label for="laki laki">
+                    <input type="radio" name="jenis kelamin" id="laki laki" value="laki laki" required />
+                    laki laki 
+                </label>
+                <label for="perempuan
+                    <input type="radio" name="jenis kelamin" id="perempuan" value="perempuan" />
+                    perempuan
+                </label>
+            </p>
+            <p>
+                <label for="Hobi">Hobi:</label>
+                <label for="reading">
+                    <input type="checkbox" name="Hobi[]" id="reading" value="reading" />
+                    Reading
+                </label>
+                <label for="swimming">
+                    <input type="checkbox" name="Hobi[]" id="swimming" value="swimming" />
+                    Swimming
+                </label>
+                <label for="singing">
+                    <input type="checkbox" name="Hobi[]" id="singing" value="singing" />
+                    Singing
+                </label>
+            </p>
+            <p>
+                <label for="bio">Biography:</label>
+                <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+            </p>
+            <p>
+                <label for="birthdate">tanggal lahir:</label>
+                <input type="date" name="tanggal lahir" id="tanggal lahir" />
+            </p>
+            <p>
+                <label for="website">Website:</label>
+                <input type="url" name="website" id="website" />
+            </p>
+            <p>
+                <label for="country">negara:</label>
+                <select name="country" id="country">
+                    <option value="">pilih negara kamu</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="SG">Singapore</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="PH">Philippines</option>
+                </select>
+            </p>
+            <p>
+                <label for="agama">Agama:</label>
+                <select name="Agama" id="agama">
+                    <option value="">pilih agama kamu</option>
+                    <option value="ID">Islam</option>
+                    <option value="SG">kristen</option>
+                    <option value="MY">hindu</option>
+                    <option value="PH">budha</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
